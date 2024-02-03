@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Prompt&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://kit.fontawesome.com/16651470f2.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <script src="script.js"></script>
+  <title>Country Information</title>
+</head>
+<body>
+  <nav>
+    <h2>iCountry <i class="fa-solid fa-earth-americas"></i></h2>
+  </nav>
+
+  <!-- Curved Background -->
+  <div class="curved-background" >
+    <ul class="circles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <div class="form-holder">
+      <form action="data.php" method="POST" id="country_form">
+        <div>
+          <label for="countryNameInput">COUNTRY NAME</label>
+          <br>
+          <div class="search-container">
+            <input type="text" id="countryNameInput" name="countryNameInput" maxlength="30" placeholder="United Kingdom..">
+            <button type="submit" id="find_country_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="result_container">
+      <div id="preloader"></div>
+
+      <div id="results_displayer" class="animate__animated animate__fadeIn">
+        <div>
+          <img id="resultFlag" src="" height="40px">
+        </div>
+        <div class="result-item">
+          <h4><i class="fa-solid fa-earth-americas"></i> Country: </h4>
+          <h4 id="resultName"></h4>
+        </div>
+
+        <div class="result-item">
+          <h4><i class="fa-solid fa-house"></i> Capital: </h4>
+          <h4 id="resultCapital"></h4>
+        </div>
+
+        <div class="result-item">
+          <h4><i class="fa-solid fa-globe"></i> Region: </h4>
+          <h4 id="resultRegion"></h4>
+        </div>
+
+        <div class="result-item">
+          <h4><i class="fa-solid fa-person"></i> Population: </h4>
+          <h4 id="resultPopulation"></h4>
+        </div>
+
+        <div class="result-item">
+          <h4><i class="fa-solid fa-language"></i> Language: </h4>
+          <h4 id="resultLanguage"></h4>
+        </div>
+
+        <div class="result-item">
+          <h4><i class="fa-solid fa-coins"></i> Currency: </h4>
+          <h4 id="resultCurrency"></h4>
+        </div>
+      </div>
+
+      <br>
+      
+      <div id="emptyContainer">
+        <button id="emptyResult_btn"><i class="fa-solid fa-arrows-rotate"></i></button>
+      </div>
+      <h2 id="no_results_msg">No Results Yet <i class="fa-solid fa-mug-hot"></i></h2>
+    </div>
+  </div>
+</body>
+</html>
