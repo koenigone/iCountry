@@ -7,9 +7,9 @@ It offers a user-friendly UI and is super simple to use.
 Just enter the name of any country and get more information about it!
 
 Technologies used:
-HTML
-CSS
-Bootstrap
-Javascript / jQuery / AJAX
-PHP
-RESTCOUNTRIES API
+- HTML
+- CSS
+- Bootstrap
+- Javascript / jQuery / AJAX
+- PHP
+- RESTCOUNTRIES API
