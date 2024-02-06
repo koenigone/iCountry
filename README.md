@@ -6,10 +6,10 @@ A tiny web application that I created in less than a day.
 It offers a user-friendly UI and is super simple to use. 
 Just enter the name of any country and get more information about it!
 
-Technologies Used:
--CSS
--HTML
--Bootstrap
--Javascript / jQuery
--PHP
--RESTCOUNTRIES API
+Technologies used:
+HTML
+CSS
+Bootstrap
+Javascript / jQuery / AJAX
+PHP
+RESTCOUNTRIES API
